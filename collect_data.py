@@ -33,7 +33,7 @@ def main():
          screen = grab_screen(region = (0,40,800,640))
          lasttime = time.time()
          screen = cv2.cvtColor(screen , cv2.COLOR_BGR2GRAY)
-         screen  = cv2.resize(screen , (224,224))
+         screen  = cv2.resize(screen , (227,227))
          keys = key_check()
          output = keys_to_output(keys)
          training_data.append([screen,output])
